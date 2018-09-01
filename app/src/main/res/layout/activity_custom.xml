@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".custom">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/building" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="96dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="128dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="enter the desired percentage"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp">
+
+                    <EditText
+                        android:id="@+id/percentage_custom"
+                        android:layout_width="143dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_text"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:paddingTop="8dp"
+                        android:layout_marginTop="8dp"
+                        android:hint="%"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:id="@+id/p_emoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_toRightOf="@id/percentage_custom"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:paddingTop="48dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="enter the desired amount"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp">
+
+                        <EditText
+                            android:id="@+id/tip_custom"
+                            android:layout_width="143dp"
+                            android:layout_height="wrap_content"
+                            android:enabled="true"
+                            android:background="@drawable/round_text"
+                            android:ems="10"
+                            android:layout_marginTop="8dp"
+                            android:paddingTop="8dp"
+                            android:hint="$"
+                            android:inputType="numberDecimal"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/t_emoji"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_toRightOf="@id/tip_custom"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
